@@ -80,3 +80,6 @@ TARGET_VENDOR_DLKM_PROP += $(DEVICE_PATH)/properties/vendor_dlkm.prop
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/matrix_hidl/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/matrix_hidl/compatibility_matrix.xml
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(DEVICE_PATH)/matrix_hidl/framework_compatibility_matrix.xml
+
+# Sepolicy - Device
+include device/brcm/rpi4/sepolicy/sepolicy.mk
