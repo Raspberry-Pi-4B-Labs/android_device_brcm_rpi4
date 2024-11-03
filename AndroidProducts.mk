@@ -16,3 +16,14 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/brcm_rpi4.mk
+
+COMMON_LUNCH_CHOICES := \
+    brcm_rpi4-ap3a-user \
+    brcm_rpi4-ap3a-userdebug \
+    brcm_rpi4-ap3a-eng \
+    brcm_rpi4-root-user \
+    brcm_rpi4-root-userdebug \
+    brcm_rpi4-root-eng \
+    brcm_rpi4-trunk_staging-user \
+    brcm_rpi4-trunk_staging-userdebug \
+    brcm_rpi4-trunk_staging-eng
