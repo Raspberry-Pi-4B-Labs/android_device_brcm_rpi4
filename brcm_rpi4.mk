@@ -21,3 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rpi4 device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+PRODUCT_NAME := aosp_rpi4
+PRODUCT_DEVICE := rpi4
+PRODUCT_BRAND := brcm
+PRODUCT_MODEL := Android on rpi4
+PRODUCT_MANUFACTURER := Raspberry Foundations
