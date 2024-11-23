@@ -14,6 +14,9 @@
 # limitations under the License.
 #
 
+# Partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Ramdisk
 PRODUCT_PACKAGES += \
 	init.rpi4.rc \
