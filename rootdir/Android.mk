@@ -13,8 +13,4 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-	init.rpi4.rc \
-    fstab.rpi4
+LOCAL_PATH := $(call my-dir)
