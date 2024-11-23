@@ -23,6 +23,9 @@ TINYCOMPRESS_TSTAMP_IS_LONG := true
 TINYALSA_NO_ADD_NEW_CTRLS := true
 TINYALSA_NO_CTL_GET_ID := true
 
+#Bluetooth
+BOARD_HAVE_BLUETOOTH := true
+
 # SOC Board Configuration for Broadcom BCM2711
 TARGET_BOARD_PLATFORM := rpi
 
