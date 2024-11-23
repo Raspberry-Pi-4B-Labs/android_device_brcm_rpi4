@@ -53,3 +53,17 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
 	init.rpi4.rc \
     fstab.rpi4
+
+# Wifi Packages
+PRODUCT_PACKAGES += libwpa_client wpa_supplicant hostapd wificond
+PRODUCT_VENDOR_PROPERTIES += wifi.interface=wlan0 \
+                              wifi.supplicant_scan_interval=15 \
+
+PRODUCT_COPY_FILES += \
+        frameworks/native/data/etc/android.hardware.wifi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.wifi.xml \
+        $(LOCAL_PATH)/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
+        $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+        $(LOCAL_PATH)/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/wifi/init.wifi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wifi.rc \
